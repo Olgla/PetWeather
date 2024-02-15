@@ -1,0 +1,33 @@
+:root {
+  --color-primary-light: white;
+  --color-primary-dark: darkblue;
+}
+
+body {
+  color: var(--color-primary-dark);
+}
+
+.header {
+  background-color: aliceblue;
+  border-color: transparent;
+  border: 1px;
+}
+.hero-title {
+  color: rgb(54, 150, 105);
+}
+
+.menu-button {
+  background-color: var(--main-color);
+  color: var(--color-primary-dark);
+  border: 2px solid var(--main-color);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.weather {
+  color: var(--color-primary-light);
+}
+
+ul {
+  list-style-type: none;
+}
