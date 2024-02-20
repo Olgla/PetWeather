@@ -1,33 +1,85 @@
+<!--Fonts-- > @font-face {
+  font-display: swap;
+  font-family: 'Work Sans';
+  font-weight: 400;
+  src: url('../fonts/work-sans-v19-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Work Sans';
+  font-weight: 700;
+  src: url('../fonts/work-sans-v19-latin-700.woff2') format('woff2');
+}
+
 :root {
   --color-primary-light: white;
   --color-primary-dark: darkblue;
 }
 
-body {
-  color: var(--color-primary-dark);
+* {
+  box-sizing: border-box;
 }
 
-.header {
-  background-color: aliceblue;
-  border-color: transparent;
-  border: 1px;
+body {
+  margin: 0;
+  color: var(--color-primary-dark);
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  background-image: url('/images/white-cloud-blue-sky.jpg');
+  background-position: center;
+  background-size: cover;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+  max-width: 1288px;
+}
+
 .hero-title {
+  text-align: center;
+  font-size: 86px;
   color: rgb(54, 150, 105);
+  font-family: 'Work Sans', sans-serif;
+  margin-bottom: 0;
 }
 
 .menu-button {
-  background-color: var(--main-color);
+  padding: 16px 32px;
+  background-color: var(--color-primary-light);
   color: var(--color-primary-dark);
-  border: 2px solid var(--main-color);
-  border-radius: 8px;
+  border: 1px solid var(--color-primary-dark);
+  border-radius: 16px;
   cursor: pointer;
+  text-align: center;
+}
+
+/* .menu-button:hover {
+  color: rgb(228, 232, 235);
+  font-weight: 600;
+} */
+
+ul {
+  list-style-type: none;
 }
 
 .weather {
   color: var(--color-primary-light);
+  text-align: center;
 }
-
-ul {
-  list-style-type: none;
+.weather-item {
+  margin: 0 auto;
 }
